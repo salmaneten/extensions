@@ -5,5 +5,15 @@ import svgr from 'vite-plugin-svgr'
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react(), svgr()],
+  plugins: [
+    react({
+      babel: {
+        plugins: [
+          '@babel/plugin-transform-optional-chaining',
+          '@babel/plugin-transform-nullish-coalescing-operator'
+        ]
+      }
+    }), 
+    svgr()
+  ],
 })

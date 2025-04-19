@@ -11,7 +11,7 @@ import linkCheckerLogo from './assets/logo-link-checker.svg';
 import domSnapshotLogo from './assets/logo-dom-snapshot.svg';
 import consolePlusLogo from './assets/logo-console-plus.svg';
 
-const extensionsData = [
+let extensionsData = [
     {
         "logo": devLensLogo,
         "name": "DevLens",

@@ -9,7 +9,7 @@ import { useTheme } from '../contexts/ThemeContext';
 const ExtensionBar = () => {
     const  { darkMode, toggleDarkMode } = useTheme();
   return (
-    <div className="flex justify-between max-w-7xl mx-auto p-3 sm:px-3 lg:px-4 bg-neutral-0 dark:bg-neutral-800 rounded-2xl ">
+    <div className="flex justify-between max-w-7xl mx-auto max-[375px]:mx-6 max-[375px]:px-3 lg:px-3 py-3 shadow-md bg-neutral-0 dark:bg-neutral-800 rounded-2xl">
       <img src={darkMode? logoDarkMpdeSrc : logoSrc}/>
       <button onClick={toggleDarkMode}>
       {darkMode? 
